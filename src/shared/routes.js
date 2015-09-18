@@ -6,8 +6,9 @@ import FooHandler from "./components/FooHandler";
 import BarHandler from "./components/BarHandler";
 
 export default (
-  <Route>
-    <Route handler={ FooHandler } path="foo" />
-    <Route handler={ BarHandler } path="bar" />
-  </Route>
+    <Route>
+      <Route path="/" handler={ AppHandler } />
+      <Route path="foo" handler={ FooHandler } />
+      <Route path="bar" handler={ BarHandler } />
+    </Route>
 );
